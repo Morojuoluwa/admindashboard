@@ -21,7 +21,7 @@ const SideBar = () => {
     const [isOpen, setIsOpen] = useState(true)
    
   return (
-    <motion.div className={`relative z-10 h-screen transition-all duration-300 ease-in-out flex-shrink-0 ${isOpen? 'w-64': 'w-20'}`} animate={{width:isOpen?250:80}}>
+    <motion.div className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${isOpen? 'w-52': 'w-20'}`} animate={{width:isOpen?250:80}}>
         <div className='h-full bg-gray-800 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-gray-700'>
             <motion.button
             
