@@ -1,9 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import OverView from './components/OverView'
-import SideBar from './components/SideBar'
+import SideBar from './components/common/SideBar'
 import ProductsPage from './components/pages/ProductPage'
 import UsersPage from './components/pages/UsersPage'
+import SalesPage from './components/pages/SalesPage'
+import OrdersPage from './components/pages/OrdersPage'
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path='/' element={<OverView/>}/>
         <Route path='/products' element={<ProductsPage/>}/>
         <Route path='/users' element={<UsersPage/>}/>
+        <Route path='/sales' element={<SalesPage/>}/>
+        <Route path='/orders' element={<OrdersPage/>}/>
       </Routes>
     </div>
   )
