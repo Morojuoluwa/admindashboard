@@ -6,6 +6,8 @@ import ProductsPage from './components/pages/ProductPage'
 import UsersPage from './components/pages/UsersPage'
 import SalesPage from './components/pages/SalesPage'
 import OrdersPage from './components/pages/OrdersPage'
+import AnalyticsPage from './components/pages/AnalyticsPage'
+import SettingsPage from './components/pages/SettingsPage'
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
         <Route path='/users' element={<UsersPage/>}/>
         <Route path='/sales' element={<SalesPage/>}/>
         <Route path='/orders' element={<OrdersPage/>}/>
+        <Route path='/analytics' element={<AnalyticsPage/>}/>
+        <Route path='/settings' element={<SettingsPage/>}/>
       </Routes>
     </div>
   )

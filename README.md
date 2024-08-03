@@ -1,8 +1,18 @@
-# React + Vite
+This is an Admin Dashboard built with React, tailwind css, framer-motion and recharts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+- Interactive charts and graphs for data insights
+- Tracks and displays key perforance indicators
+= Search and filter option for to find and build specific subset of data
+- Responsive Design
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used
+
+React: JavaScript library for building user interfaces
+
+Tailwind CSS: Utility-first CSS framework
+
+Framer-motion: A react library for animations
+
+Recharts: A react library used to visualize data in various formats.

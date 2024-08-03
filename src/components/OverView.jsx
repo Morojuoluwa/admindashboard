@@ -23,12 +23,12 @@ const OverView = () => {
             <StatCard name='Conversion Rate' icon={BarChart2} value='12.5%' color='#10B981' />
 
             </motion.div>
-            <div className='grid grid-col-1 gap-3 lg:grid-cols-2'>
+            <div className='grid grid-col-1 gap-3 lg:grid-cols-2 mb-4'>
               <SalesOverviewChart/>
               <CategoryDistribution/>
-              <SalesChannelChart/>
-
             </div>
+
+              <SalesChannelChart/>
 
         </main>
     </div>
