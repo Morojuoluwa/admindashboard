@@ -13,14 +13,14 @@ const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
 const CategoryDistribution = () => {
   return (
     <motion.div
-			className='bg-gray-800 pb-0 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700'
+			className='bg-gray-800 pt-8 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl px-6 border border-gray-700'
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.3 }}
 		>
 			<h2 className='text-lg font-medium mb-2 text-gray-100'>Category Distribution</h2>
 			<div className='h-80'>
-				<ResponsiveContainer width={"100%"} height={"90%"}>
+				<ResponsiveContainer width={"100%"} height={"100%"}>
 					<PieChart>
 						<Pie
 							data={categoryData}
@@ -43,8 +43,8 @@ const CategoryDistribution = () => {
 							}}
 							itemStyle={{ color: "#E5E7EB" }}
 						/>
-						<Legend />
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem voluptas, veniam necessitatibus tempora officiis nobis dicta blanditiis quia maxime assumenda.</p>
+						<Legend className="p-0" />
+					
 					</PieChart>
 				</ResponsiveContainer>
 			</div>
