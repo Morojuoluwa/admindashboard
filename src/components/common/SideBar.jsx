@@ -21,14 +21,23 @@ const SideBar = () => {
     const [isOpen, setIsOpen] = useState(true)
    
   return (
-    <motion.div className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${isOpen? 'w-52': 'w-20'}`} animate={{width:isOpen?250:80}}>
+    <motion.div className={`relative max-sm: z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${isOpen? 'w-52': 'w-20'}`} animate={{width:isOpen?250:80}}>
         <div className='h-full bg-gray-800 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-gray-700'>
             <motion.button
             
             whileHover={{scale:1.1}}
             whileTap={{scale:0.9}}
             onClick={()=>setIsOpen(!isOpen)}
-            className='p-2 rounded-full hover:bg-gray-700 transition-colors max-w-full'
+            className='p-2 rounded-full max-sm:hidden hover:bg-gray-700 transition-colors max-w-full'
+            >
+                <Menu size={24}/>
+            </motion.button>
+            <motion.button
+            
+            whileHover={{scale:1.1}}
+            whileTap={{scale:0.9}}
+            
+            className='p-2 rounded-full sm:hidden hover:bg-gray-700 transition-colors max-w-full'
             >
                 <Menu size={24}/>
             </motion.button>
